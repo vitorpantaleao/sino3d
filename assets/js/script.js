@@ -1,3 +1,11 @@
+function conclusion() {
+    alert("Inicializando...")
+}
+
 function nextStep() {
-    alert("Inicializando...");
+    alert("Proximo passo!")
+}
+
+function prevStep() {
+    alert("Passo anterior!")
 }
