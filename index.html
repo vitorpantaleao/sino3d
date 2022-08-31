@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <script src="assets/js/script.js"></script>
+        <title>Sino3D</title>
+    </head>
+    <body class="bg-light">
+        <div class="container">
+            <div class="row justify-center pt-40">
+                <div class="col center">
+                    <img src="assets/img/logo.png" alt="Logotipo Sino3D" title="Logotipo Sino3D">
+                </div>
+            </div>
+            <div class="row justify-center pt-20">
+                <div class="col">
+                    <form action="" method="">
+                        <div class="section__form">
+                            <div class="form-group center">
+                                <label class="left pb-10">Velocidade</label>
+                                <input id="range1" class="range" type="range" name="velocidade" min="0" max="100" value="50" step="1" oninput="this.nextElementSibling.value = this.value" />
+                                <output>50</output><span> rpm</span>
+                            </div>
+                            <div class="form-group center mt-10">
+                                <label class="left pb-10">Quantidade de fotos</label>
+                                <input id="range2" class="range" type="range" name="fotos" min="0" max="50" value="25" step="1" oninput="this.nextElementSibling.value = this.value" />
+                                <output class="center">25</output><span> fotos</span>
+                            </div>
+                            <div class="form-group mt-10">
+                                <label class="pb-10">Direção</label>
+                                <div class="flex align-center">
+                                    <div class="flex align-center">
+                                        <input type="radio" name="direcao" id="radio1" value="horario" checked>
+                                        <label class="font-light pl-5" for="radio1">Horário</label>
+                                    </div>
+                                    <div class="flex align-center w-full pl-15">
+                                        <input type="radio" name="direcao" id="radio2" value="antiHorario">
+                                        <label class="font-light pl-5" for="radio2">Anti-Horário</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__form mt-40">
+                            <div class="form-group center">
+                                <label class="left pb-10">Ângulo da plataforma</label>
+                                <input id="range2" class="range" type="range" name="angulo" min="0" max="360" value="180" step="1" oninput="this.nextElementSibling.value = this.value" />
+                                <output class="center">180</output><span>°</span>
+                                <div class="group__btn flex justify-between">
+                                    <button class="btn-step"><img src="assets/img/prev.svg" alt=""></button>
+                                    <button class="btn-step"><img src="assets/img/next.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group flex justify-center">
+                            <button type="submit" class="btn" onclick="nextStep()">INICIAR</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

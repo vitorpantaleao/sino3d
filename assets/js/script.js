@@ -1,0 +1,3 @@
+function nextStep() {
+    alert("Inicializando...");
+}
